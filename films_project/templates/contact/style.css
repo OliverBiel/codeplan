@@ -34,6 +34,17 @@ h4{
     margin-bottom: 2px;
 }
 
+select{
+    background: #455777;
+    border-radius: 8px;
+
+    padding: 8px 80px;
+    cursor: pointer;
+    
+    width: 100%;
+    text-align: center;
+}
+
 div{
     margin-bottom: 0.5rem;
 }
@@ -88,7 +99,6 @@ input{
 
     background: transparent;
     border: 1px solid #455777;
-    outline: none;
 }
 
 input[type="file"] {
@@ -114,4 +124,8 @@ input[type="file"] {
 
 .input-field-file:hover{
     background: #344258;
+}
+
+#stunt-situation{
+    
 }

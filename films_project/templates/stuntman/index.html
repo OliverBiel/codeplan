@@ -12,7 +12,7 @@
         <main>
             <div id="form-div">
                 <h1 id="main-title">Films API</h1>
-                <h3 id="subtitle">Complete the form to add an actor</h3>
+                <h3 id="subtitle">Complete the form to add an stuntman</h3>
                 <form action="">
                     <div class="input-field">
                         <h4>Name</h4>
@@ -20,12 +20,21 @@
                     </div>
 
                     <div class="input-field">
-                        <h4>Birthdate</h4>
-                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="release_date" id="release_date" required>
+                        <h4>Referred Actor</h4>
+                       <select name="fk_actor" id="fk_actor" >
+                           <option value="teste">Teste</option>
+                           <option value="teste">Teste</option>
+                           <option value="teste">Teste</option>
+                       </select>
+                    </div>
+
+                    <div id="stunt-situation">
+                        <h4>Is the stuntman active?</h4>
+                        <input type="checkbox" id="situation">
                     </div>
 
 
-                    <input type="submit" value="Add Actor">
+                    <input type="submit" value="Add stuntman">
                 </form>
             </div> 
         </main>

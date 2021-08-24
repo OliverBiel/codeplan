@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'filmsdb',
         'USER': 'postgres',
         'PASSWORD': 'admin123',
-        'HOST': '172.18.0.6',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }

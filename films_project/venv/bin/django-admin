@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/home/bieloliver/Área de trabalho/Codeplan/films_project/venv/bin/python3" "$0" "$@"
+'''exec' "/home/gedeg/Área de Trabalho/Codeplan_Gabriel/codeplan/films_project/venv/bin/python3" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

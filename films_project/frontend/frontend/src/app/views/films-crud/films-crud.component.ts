@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-films-crud',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsCrudComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  goToCreateFilm():void{
+    this.router.navigate(['/films/create'])
   }
 
 }

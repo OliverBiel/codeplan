@@ -1,0 +1,20 @@
+.sidenav{
+    background: rgb(50, 50, 50);
+    background: linear-gradient(180deg, rgb(44, 44, 44) 0%, rgb(26, 26, 26) 60%, rgb(14, 14, 14) 100%);
+    width: 200px;
+}
+
+/*Botoes da side navbar*/
+.sidenav a{
+    color: white;
+}
+
+.sidenav i{
+    padding-right: 10px;
+}
+
+/*Conteudo da aplicacao*/
+.content{
+    padding: 16px;
+    background: white;
+}

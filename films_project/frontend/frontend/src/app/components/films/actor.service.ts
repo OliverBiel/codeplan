@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class ActorService {
 
-  baseUrl = "http://localhost:8000/actor/";
+  baseUrl = "http://127.0.0.1:8000/actor/";
   headers = new HttpHeaders({
     'Access-Control-Allow-Origin': '*',
     "Content-Type": "application/json",

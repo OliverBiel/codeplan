@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ActorsCreateComponent implements OnInit {
   
-  actorTest: Actor = {
+  actor: Actor = {
     name: "",
     birthdate: ''
   };
@@ -22,7 +22,7 @@ export class ActorsCreateComponent implements OnInit {
   }
 
   createActor(): void{
-    this.actorService.create(this.actorTest).subscribe(() => {
+    this.actorService.create(this.actor).subscribe(() => {
       this.actorService.showMessage('Ator incluido!')
       this.router.navigate(['/actors'])
     });

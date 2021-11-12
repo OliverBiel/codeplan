@@ -20,12 +20,17 @@ import { FilmsCreateComponent } from './components/films/films-create/films-crea
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatInputModule } from '@angular/material/input'
+
 import { ActorsCrudComponent } from './views/actors-crud/actors-crud.component';
 import { StuntmansCrudComponent } from './views/stuntmans-crud/stuntmans-crud.component';
 import { ContactsCrudComponent } from './views/contacts-crud/contacts-crud.component';
 import { ContactsCreateComponent } from './components/films/contacts-create/contacts-create.component';
 import { StuntmansCreateComponent } from './components/films/stuntmans-create/stuntmans-create.component';
 import { ActorsCreateComponent } from './components/films/actors-create/actors-create.component';
+import { ActorsReadComponent } from './components/films/actors-read/actors-read.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +47,7 @@ import { ActorsCreateComponent } from './components/films/actors-create/actors-c
     ContactsCreateComponent,
     StuntmansCreateComponent,
     ActorsCreateComponent,
+    ActorsReadComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +59,10 @@ import { ActorsCreateComponent } from './components/films/actors-create/actors-c
     MatCardModule,
     MatButtonModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

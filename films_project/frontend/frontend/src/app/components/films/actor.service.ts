@@ -38,4 +38,8 @@ export class ActorService {
   create(actor: Actor): Observable<Actor>{
     return this.http.post<Actor>(this.baseUrl, actor);
   }
+
+  read(): Observable<Actor[]> {
+    return this.http.get<Actor[]>(this.baseUrl)
+  }
 }

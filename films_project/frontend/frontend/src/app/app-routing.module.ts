@@ -12,6 +12,8 @@ import { FilmsCrudComponent } from './views/films-crud/films-crud.component';
 import { ActorsCrudComponent } from './views/actors-crud/actors-crud.component';
 import { StuntmansCrudComponent } from './views/stuntmans-crud/stuntmans-crud.component';
 import { ContactsCrudComponent } from './views/contacts-crud/contacts-crud.component';
+import { ActorUpdateComponent } from './components/films/actor-update/actor-update.component';
+import { ActorsDeleteComponent } from './components/films/actors-delete/actors-delete.component';
 const routes: Routes = [{
   path:"",
   component: HomeComponent
@@ -47,6 +49,14 @@ const routes: Routes = [{
 {
   path:"actors",
   component:ActorsCrudComponent
+},
+{
+  path:"actors/update/:id",
+  component:ActorUpdateComponent
+},
+{
+  path:"actors/delete/:id",
+  component:ActorsDeleteComponent
 }
 ];
 

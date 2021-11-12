@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Alterar Ator</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nome"
+            [(ngModel)]="actor.name" name="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input type="date" matInput placeholder="Data de nascimento"
+            [(ngModel)]="actor.birthdate" name="birthdate">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="updateActor()" class="black">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

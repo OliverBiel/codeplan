@@ -1,0 +1,23 @@
+table{
+    width: 100%;
+}
+
+.edit{
+    margin-right: 10px;
+}
+
+.edit > i{
+    color: #3d3d3d;
+}
+
+.edit > i:hover{
+    color: #1b1b1b;
+}
+
+.delete > i{
+    color: #970110;
+}
+
+.delete > i:hover{
+    color: #66010b;
+}

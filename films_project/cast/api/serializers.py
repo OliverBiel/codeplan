@@ -5,16 +5,16 @@ from cast.models import Actor, Stuntman, ContactDetails
 class ActorSerializer(ModelSerializer):
     class Meta:
         model = Actor
-        fields = ['name', 'birthdate']
+        fields = ['id','name', 'birthdate']
 
 
 class StuntmanSerializer(ModelSerializer):
     class Meta:
         model = Stuntman
-        fields = ['name', 'active', 'fk_actor']
+        fields = ['id','name', 'active', 'fk_actor']
 
 
 class ContactDetailsSerializer(ModelSerializer):
     class Meta:
         model = ContactDetails
-        fields = ['phone_number', 'address', 'fk_actor']
+        fields = ['id','phone_number', 'address', 'fk_actor']

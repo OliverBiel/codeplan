@@ -7,4 +7,4 @@ class MovieSerializer(ModelSerializer):
     cast = ActorSerializer(many=True)
     class Meta:
         model = Movie
-        fields = ['title', 'release_date', 'cast', 'poster']
+        fields = ['id','title', 'release_date', 'cast', 'poster']

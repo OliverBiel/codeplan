@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Excluir Ator</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input type="text" matInput placeholder="Nome"
+            [(ngModel)]="actor.name" name="name" disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input type="date" matInput placeholder="Data de nascimento"
+            [(ngModel)]="actor.birthdate" name="birthdate" disabled>
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button (click)="deleteActor()" class="delete">
+        EXCLUIR
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

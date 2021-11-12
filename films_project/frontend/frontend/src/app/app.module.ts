@@ -31,6 +31,12 @@ import { ContactsCreateComponent } from './components/films/contacts-create/cont
 import { StuntmansCreateComponent } from './components/films/stuntmans-create/stuntmans-create.component';
 import { ActorsCreateComponent } from './components/films/actors-create/actors-create.component';
 import { ActorsReadComponent } from './components/films/actors-read/actors-read.component';
+import { ActorRead2Component } from './components/films/actor-read2/actor-read2.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ActorUpdateComponent } from './components/films/actor-update/actor-update.component';
+import { ActorsDeleteComponent } from './components/films/actors-delete/actors-delete.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +54,9 @@ import { ActorsReadComponent } from './components/films/actors-read/actors-read.
     StuntmansCreateComponent,
     ActorsCreateComponent,
     ActorsReadComponent,
+    ActorRead2Component,
+    ActorUpdateComponent,
+    ActorsDeleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -62,7 +71,10 @@ import { ActorsReadComponent } from './components/films/actors-read/actors-read.
     HttpClientModule,
     FormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

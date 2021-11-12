@@ -42,4 +42,19 @@ export class ActorService {
   read(): Observable<Actor[]> {
     return this.http.get<Actor[]>(this.baseUrl)
   }
+
+  readById(id: string): Observable<Actor>{
+    const url = `${this.baseUrl}${id}/`
+    return this.http.get<Actor>(url)
+  }
+
+  update(actor: Actor): Observable<Actor>{
+    const url = `${this.baseUrl}${actor.id}/`
+    return this.http.put<Actor>(url, actor)
+  }
+
+  delete(id: string): Observable<Actor>{
+    const url = `${this.baseUrl}${id}/`
+    return this.http.delete<Actor>(url)
+  }
 }

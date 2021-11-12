@@ -11,8 +11,8 @@ import { Router } from '@angular/router';
 export class ActorsCreateComponent implements OnInit {
   
   actorTest: Actor = {
-    name: "Ator 1 TS",
-    birthdate: new Date(2005, 5, 1)
+    name: "",
+    birthdate: ''
   };
 
   constructor(private actorService: ActorService,

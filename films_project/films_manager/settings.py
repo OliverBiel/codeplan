@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'films',
     'cast',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,10 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'corsheaders.middleware.CorsMiddleware',
+    'corsheaders.middleware.CorsPostCsrfMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 

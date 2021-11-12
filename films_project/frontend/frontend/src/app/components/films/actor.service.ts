@@ -36,6 +36,6 @@ export class ActorService {
   }
 
   create(actor: Actor): Observable<Actor>{
-    return this.http.post<Actor>(this.baseUrl, actor, this.reqOpt);
+    return this.http.post<Actor>(this.baseUrl, actor);
   }
 }
